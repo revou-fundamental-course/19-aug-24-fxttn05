@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="School Logo" class="logo">
+            <div class="list">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Our Profile</a>
+                <a href="#">Achievement</a>
+                <a href="#">Message Us</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome">
+            <h1>Hi <span id="userName">Guest</span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+            <!-- Banner Image -->
+            <div class="banner"></div>
+        </section>
+        
+        <section id="facilitation">
+            <h2>Our Facilitation</h2>
+            <div class="facilities">
+                <div>Professional Teacher</div>
+                <div>Sport Field</div>
+                <div>Classroom</div>
+            </div>
+        </section>
+
+        <section id="message">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form id="contactForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label>Jenis Kelamin:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required> Laki-Laki
+                        <input type="radio" id="female" name="gender" value="Perempuan"> Perempuan
+                    </div>
+                    
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="empty-box" id="output"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Revou</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
